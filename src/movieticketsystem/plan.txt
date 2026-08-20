@@ -1,0 +1,43 @@
+Movie ticket Booking system
+
+Design an in-memory Movie Ticket Booking System.
+
+Users should be able to discover movies, select a show, book seats, and manage their bookings.
+
+Requiremnts:
+-User Search city and movie and system allows him to discover theaters,shows for that movie
+-any user can search a movie , but only registered user can book the Ticket
+-A user can book upto 10 seats, price of seat differnt for  diffent show
+-A user can cancel booking before 2 hrs of show and seat become empty
+-Refund Intiated with external system
+
+-selected seats have expiry lock of 5mins , they can't be booked by others in that time
+-we should show sold out for a show if all tickets booked.
+-booking can't be allowed for ongoing shows
+
+out of scope:
+-payment gateway integration 
+-payments all ways succeed,refunds always succed
+-we need thread safety
+
+Capaibilties:
+Search a Movie
+User -> City -> theather -> shows -> AvaibleSeats
+Booking 
+User -> Show -> ShowSeat ->booking
+User -> booking -> cancel booking
+User -> view booking
+payment
+Booking -> external payment
+
+Enities:
+core entities:
+-User, 
+-Movie
+-City
+-Theater
+-Screen
+-Show 
+-Seat 
+-ShowSeat
+-Booking
