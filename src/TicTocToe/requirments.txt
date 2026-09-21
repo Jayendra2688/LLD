@@ -1,0 +1,25 @@
+1.Requirment Gathering
+-> Abilities
+1.each player takes turns and put his respective symbol on the board
+2.after any player's 3 symbols align in vertically,horizantally or diagonally he will win
+
+edge cases:
+1.player can't take two chances simultaneously
+2.player cant put symbol on already existing symbol
+3.if player cant able to complete his turn game is drawn
+
+2.Class Identification:
+1.Player
+2.Board
+3.TictoctoeManager
+4.symbol
+
+3.Class Responsiblities.
+->Player should hold name and symbol
+->Board can hold symbols , and have function to print the board, have functionality to add a symbol in board, hold functionality to check if game is over
+->TictoctoeManager can have a functionality to start the game with players and board, and provide turns , and declare the result of game
+
+4.UML Diagram
+/Users/jayendrareddy/Desktop/LLD/src/TicTocToe/UML_diagram.png
+
+5.Implementation
